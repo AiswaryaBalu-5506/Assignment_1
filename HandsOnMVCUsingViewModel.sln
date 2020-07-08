@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandsOnMVCUsingViewModel", "HandsOnMVCUsingViewModel\HandsOnMVCUsingViewModel.csproj", "{2C46D5B7-AEC2-4EEC-BE58-0DE78A73EB28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C46D5B7-AEC2-4EEC-BE58-0DE78A73EB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C46D5B7-AEC2-4EEC-BE58-0DE78A73EB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C46D5B7-AEC2-4EEC-BE58-0DE78A73EB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C46D5B7-AEC2-4EEC-BE58-0DE78A73EB28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C0B3188-F28C-41A9-B72D-99978E284ABC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿@model List<HandsOnMVCUsingViewModel.Models.Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Welcome to Index of Products page</h1>
+
+<a href="/Create">Create</a>
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price in INR</th>
+            <th>Stock</th>
+        </tr>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.pID</td>
+                <td>@product.pName</td>
+                <td>@product.price</td>
+                <td>@product.stock</td>
+            </tr>
+        }
+    </table>
+</div>
+

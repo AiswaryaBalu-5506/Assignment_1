@@ -1,0 +1,21 @@
+﻿@model List<HandsOnMVCUsingViewModel.Models.Project>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<a href="Project/Create">Create</a>
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th><th>Name</th>
+        </tr>
+        @foreach(var item in Model)
+		{
+            <tr>
+             <td>@item.Pid</td>
+              <td>@item.Pname</td>
+            </tr>
+		}
+    </table>
+</div>
