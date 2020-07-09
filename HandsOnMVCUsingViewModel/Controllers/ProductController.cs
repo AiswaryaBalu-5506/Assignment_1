@@ -40,7 +40,7 @@ namespace HandsOnMVCUsingViewModel.Controllers
             }
             else
             {
-                return RedirectToAction("Err");
+                return RedirectToAction("Index");
             }
              
         }

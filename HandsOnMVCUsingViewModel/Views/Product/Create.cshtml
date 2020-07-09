@@ -6,39 +6,42 @@
 }
 
 @using (Html.BeginForm("Create", "Product", FormMethod.Post))
-{
-    <div class="container">
-        <table class="table table-bordered">
-            <tr>
-                <td>@Html.LabelFor(m => m.pID)</td>
-                <td>@Html.TextBoxFor(m => m.pID)</td>
-                <td>@Html.ValidationMessageFor(m => m.pID, "")</td>
-            </tr>
-            <tr>
-                <td>@Html.LabelFor(m => m.pName)</td>
-                <td>@Html.TextBoxFor(m => m.pName)</td>
-                <td>@Html.ValidationMessageFor(m => m.pName)</td>
-            </tr>
-            <tr>
-                <td>@Html.LabelFor(m => m.price)</td>
-                <td>@Html.TextBoxFor(m => m.price)</td>
-            </tr>
-            <tr>
-                <td>@Html.LabelFor(m => m.stock)</td>
-                <td>@Html.TextBoxFor(m => m.stock)</td>
-            </tr>
+    {
+        <div class="container">
+            <table class="table table-bordered">
+                <tr>
+                    <td>@Html.LabelFor(m => m.pID)</td>
+                    <td>@Html.TextBoxFor(m => m.pID)</td>
+                    <td>@Html.ValidationMessageFor(m => m.pID, "")</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.pName)</td>
+                    <td>@Html.TextBoxFor(m => m.pName)</td>
+                    <td>@Html.ValidationMessageFor(m => m.pName)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.price)</td>
+                    <td>@Html.TextBoxFor(m => m.price)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.stock)</td>
+                    <td>@Html.TextBoxFor(m => m.stock)</td>
+                </tr>
 
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Add" />
-                </td>
-            </tr>
-        </table>
-    </div>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Add" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    }
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
 }
 
-<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
-<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
 
 
 
