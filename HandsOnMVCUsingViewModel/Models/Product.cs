@@ -8,9 +8,9 @@ namespace HandsOnMVCUsingViewModel.Models
 {
     public class Product
     {
-        [Required]
+        [Required(ErrorMessage = "ID IS REQUIRED")]
         public int pID { get; set; }
-        [Required]
+        [Required(ErrorMessage = "NAME IS REQUIRED")]
         public string pName { get; set; }
         public int price { get; set; }
         public string stock { get; set; }

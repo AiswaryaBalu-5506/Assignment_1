@@ -40,14 +40,6 @@ namespace HandsOnMVCUsingViewModel.Controllers
             }
             else
             {
-                if (String.IsNullOrEmpty(p.pID.ToString()))
-                {
-                    ModelState.AddModelError("pID", "ID Required");
-                }
-                if (String.IsNullOrEmpty(p.pName))
-                {
-                    ModelState.AddModelError("pName", "Name Required");
-                }
                 return RedirectToAction("Err");
             }
              
