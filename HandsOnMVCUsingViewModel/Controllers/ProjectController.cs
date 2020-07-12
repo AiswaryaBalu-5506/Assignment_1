@@ -11,9 +11,8 @@ namespace HandsOnMVCUsingViewModel.Controllers
         public static List<Project> list = new List<Project>()
         {
             new Project() { Pid = "P0001", Pname = "HealthCare" }
-        };
-
-        [HttpGet]
+         };
+       [Route("GetAllProjects")]
         public IActionResult Index()
         {
             return View(list);
