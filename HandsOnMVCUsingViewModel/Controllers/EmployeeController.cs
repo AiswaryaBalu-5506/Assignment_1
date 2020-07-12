@@ -50,8 +50,12 @@ return View(ew);
         [HttpGet]
         public IActionResult Details()
         {
-            Employee ep = _empRepo.GetEmpById(1);
-            return View(ep);
+            //ViewBag.PageTitle = "This is ViewBag demo";
+            //Employee ep = _empRepo.GetEmpById(1);
+            EmpTitleViewModel vmEmpTitle = new EmpTitleViewModel();
+            vmEmpTitle.PageTitle = "This is ViewModel demo";
+            vmEmpTitle.EmpModel = _empRepo.GetEmpById(1);
+            return View(vmEmpTitle);
         }
 
 

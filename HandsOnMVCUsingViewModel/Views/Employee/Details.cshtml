@@ -1,32 +1,32 @@
-﻿@model HandsOnMVCUsingViewModel.Models.Employee
+﻿@model HandsOnMVCUsingViewModel.ViewModels.EmpTitleViewModel
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+    <h1>@Html.DisplayNameFor(model => model.PageTitle)</h1>
 
 <div>
     <h4>Employee</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Eid)
+            @Html.DisplayNameFor(model => model.EmpModel.Eid)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Eid)
+            @Html.DisplayFor(model => model.EmpModel.Eid)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Ename)
+            @Html.DisplayNameFor(model => model.EmpModel.Ename)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Ename)
+            @Html.DisplayFor(model => model.EmpModel.Ename)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Pid)
+            @Html.DisplayNameFor(model => model.EmpModel.Pid)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Pid)
+            @Html.DisplayFor(model => model.EmpModel.Pid)
         </dd>
     </dl>
 </div>
